@@ -54,12 +54,12 @@ static FSMStateRoutines fsm_sas_fp[FSM_NUM_STATES] = {FSM_NULL};
 /*************************************************************************/
 /*************************************************************************/
 const FSMState fsm_sas_fsmTable[FSM_NUM_STATES] =
-{
+{   /* Marked status   Pointer to entry/exit APIs  Transition: 0          1
   {
     FSM_MARKED_STATE, &fsm_sas_fp[FSM_STATE_0],   {FSM_EVT_INACTIVE, FSM_STATE_1}
   },
   {
-    FSM_UNMARKED_STATE, &fsm_sas_fp[FSM_STATE_1], {FSM_STATE_0, FSM_EVT_INACTIVE}
+    FSM_UNMARKED_STATE, &fsm_sas_fp[FSM_STATE_1], {FSM_STATE_0,      FSM_EVT_INACTIVE}
   }
 };
 /*************************************************************************/
