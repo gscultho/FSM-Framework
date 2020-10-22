@@ -29,10 +29,7 @@
 /* Replace function on left with API for mutual exclusion, unlock() */
 #define fsm_exitCritical()               (0)
 
-/*************************************************************************/
-/* Auto-generated definitions, do not modify                             */
-#define FSM_NUM_EVENTS                   2
-/*************************************************************************/
+
 
 #define FSM_TRUE                         1
 #define FSM_FALSE                        0
@@ -68,6 +65,7 @@ typedef enum FSM_EVT
   FSM_EVT_0 = 0,
   FSM_EVT_1,
 
+  FSM_NUM_EVENTS,
   FSM_EVT_INACTIVE,
   FSM_EVT_NULL
 }
